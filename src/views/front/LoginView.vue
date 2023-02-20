@@ -39,7 +39,7 @@ export default {
           // 儲存資料         自訂義名稱
           document.cookie = `hexToken=${token}; expires=${new Date(expired)};`
           // location.href = './product.html'
-          this.$router.push('back/products')
+          this.$router.push('/products')
         } catch (error) {
           console.log(error.response.data)
         }
